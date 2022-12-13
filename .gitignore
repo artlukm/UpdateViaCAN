@@ -1,0 +1,9 @@
+*.exe
+*.bin
+*.png
+*.cmd
+
+message.go
+
+.vscode/
+.firmvare/
