@@ -264,15 +264,16 @@ func threadRequest() {
 }
 
 func enterServiceMode() {
+	code := CODE
 	msg := candev.Message{ID: IPTM_KEY, Len: 8, Data: [8]byte{
-		uint8(CODE >> 56),
-		uint8(CODE >> 48),
-		uint8(CODE >> 40),
-		uint8(CODE >> 32),
-		uint8(CODE >> 24),
-		uint8(CODE >> 16),
-		uint8(CODE >> 8),
-		uint8(CODE),
+		uint8(code >> 56),
+		uint8(code >> 48),
+		uint8(code >> 40),
+		uint8(code >> 32),
+		uint8(code >> 24),
+		uint8(code >> 16),
+		uint8(code >> 8),
+		uint8(code),
 	}}
 
 	for {
